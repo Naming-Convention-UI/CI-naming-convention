@@ -110,7 +110,7 @@ function firstLetterUpper(text){ if(!text) return ""; return text.charAt(0).toUp
 function toFlatUpper(text){ return (text || "").replace(/\s+/g,"").toUpperCase(); } 
 function toggleChannelFields(){ document.getElementById('channelFields').style.display = (document.getElementById('type').value==='Channel')?'grid':'none'; } 
 function setHint(type){ const hints={ 
- 'Package':'VG_<TD/BA/GF>_<Process>_<Desc?>','Integration Flow':'IF_<TD/BA/GF>_<Process>_<SND>_To_<RCV>_<Desc?>','OData Service':'OD_<TD/BA/GF>_<Process>_<SND>_To_<RCV>_<Desc?>','Value Mapping':'VM_<ConversionDetails>','Mapping':'MM_<SRC>_to_<TGT>','Content Modifier':'CM_<Object>','Converter':'JSON_to_XML_Converter_<Desc?>','Decoder':'DC_<Algorithm>_<Desc>','Encoder':'EC_<Algorithm>_<Desc>','Filter':'FT_<Desc>','Message Digest':'MD_<Desc>','Process':'IP_<Desc>','Local Process':'LIP_<Desc>','Channel':'<Adapter>_<Snd/Rcv>_<Object>'}; 
+ 'Package':'VG_<TD/BA/GF>_<Process>_<Desc>','Integration Flow':'IF_<TD/BA/GF>_<Process>_<SND>_To_<RCV>_<Desc>','OData Service':'OD_<TD/BA/GF>_<Process>_<SND>_To_<RCV>_<Desc>','Value Mapping':'VM_<ConversionDetails>','Mapping':'MM_<SRC>_to_<TGT>','Content Modifier':'CM_<Object>','Converter':'<SRC>_to_<TGT>_Converter_<Desc>','Decoder':'DC_<Algorithm>_<Desc>','Encoder':'EC_<Algorithm>_<Desc>','Filter':'FT_<Desc>','Message Digest':'MD_<Desc>','Process':'IP_<Desc>','Local Process':'LIP_<Desc>','Channel':'<Adapter>_<Snd/Rcv>_<Object>'}; 
  document.getElementById('hint').textContent = hints[type] || ''; } 
 // ====== Data ====== 
 const BU_OPTIONS=[ 'GroupFinance','VCE','VolvoTrucks','MackTrucks','RenaultTrucks','VolvoBuses','VolvoPenta','VolvoFinancialServices','DTO','GroupP&C' ]; 
